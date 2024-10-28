@@ -11,6 +11,11 @@ Este foi um projeto que eu desenvolvi na faculdade. O objetivo era pensar em uma
 
 Adicionei o Node apenas para facilitar a inicialização do projeto.
 
+Na tela de login, utilize as credenciais de demonstração:
+
+Usuário: demo@email.com
+Senha: demo@123
+
 ```bash
 npm install
 ```
