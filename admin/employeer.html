@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/employeer.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+    <link rel="shortcut icon" type="imagex/png" href="/../assets/logo-principal.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script type="module" src="/js/employer.js" defer></script>
+    <title>Dashboard | Agritech</title>
+</head>
+<body>
+    <header>
+        <div id="up-bar">
+            <p><span>CONTROLE DE </span>FUNCIONARIOS</p>
+            <div id="optins-up-bar">
+                <i class="ph ph-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <div id="logo-side">
+            <img src="/assets/logo-principal.png" alt="logo-agritech">
+            <p><span>AGRI</span>TECH</p>
+        </div>
+        <div id="options">
+            <a href="/admin/dashbord.html"><i class="ph ph-chart-line-up"> </i> Dashboard</a>
+            <a href="/admin/plantations.html"><i class="ph ph-plant"> </i> Plantações</a>
+            <a href="/admin/animals.html"><i class="ph ph-paw-print"> </i> Animais</a>
+            <a href="/admin/stock.html"><i class="ph ph-package"> </i> Estoque</a>
+            <a href="/admin/machinery.html"><i class="ph ph-tractor"> </i> Maquinário</a>
+            <a href="/admin/finance.html"><i class="ph ph-currency-dollar"> </i> Financeiro</a>
+            <a href="/admin/employeer.html"><i class="ph ph-users-four"> </i> Funcionários</a>
+            <a href="/index.html"><i class="ph ph-sign-out"> </i> Sair</a>
+        </div>
+    </aside>
+
+    <main>
+        <div class="cards">
+            <h1>Media sálarial</h1>
+            <canvas id="myChart-Machinery" style="margin: 2rem; height:30vh; width:90%;"></canvas>
+        </div>
+        <div class="cards">
+            <h1>Funcionario por setor</h1>
+            <canvas id="myChart-Animals" style="margin: 2rem; height:30vh; width:90%; "></canvas>
+        </div>
+        <div class="cards">
+            <h1>Genêro</h1>
+            <canvas id="myChart-Finance" style="margin-top: 1rem; height:30vh; width:90%; "></canvas>
+        </div>
+        <div class="cards">
+            <div id='calendar'></div>
+        </div>
+        <div class="cards">
+            <div id="title-options">
+                <h1>Funcionários</h1>
+                <button>&plus;</button>
+            </div>
+            <div id="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Cargo</th>
+                            <th>Salário</th>
+                            <th>Inicio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>José</td>
+                            <td>Operadores de Máquinas</td>
+                            <td>R$3.500</td>
+                            <td>29/12/2020</td>
+                        </tr>
+                        <tr>
+                            <td>João</td>
+                            <td>Operadores de Máquinas</td>
+                            <td>R$5.000</td>
+                            <td>15/05/2019</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro</td>
+                            <td>Engenheiro</td>
+                            <td>R$11.000</td>
+                            <td>14/07/2022</td>
+                        </tr>
+                        <tr>
+                            <td>Marcos</td>
+                            <td>Agrônomo</td>
+                            <td>R$8.000</td>
+                            <td>15/05/2021</td>
+                        </tr>
+                        <tr>
+                            <td>Maria</td>
+                            <td>Veterinária</td>
+                            <td>R$9.000</td>
+                            <td>27/01/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Felipe</td>
+                            <td>Analista de Dados</td>
+                            <td>R$7.000</td>
+                            <td>24/08/2022</td>
+                        </tr>
+                        <tr>
+                            <td>Ricardo</td>
+                            <td>Gerente</td>
+                            <td>R$15.000</td>
+                            <td>15/05/2017</td>
+                        </tr>
+                        <tr>
+                            <td>Juliana</td>
+                            <td>Contador</td>
+                            <td>R$5.700</td>
+                            <td>12/07/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Lucas</td>
+                            <td>Téc. Agrícola</td>
+                            <td>R$3.000</td>
+                            <td>15/01/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Ana</td>
+                            <td>RH</td>
+                            <td>R$5.000</td>
+                            <td>12/05/2019</td>
+                        </tr>
+                        <tr>
+                            <td>Rafael</td>
+                            <td>Ass. Administrativo</td>
+                            <td>R$2.200</td>
+                            <td>17/06/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>Ass. Administrativo</td>
+                            <td>R$2.200</td>
+                            <td>23/03/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Amanda</td>
+                            <td>Ass. Administrativo</td>
+                            <td>R$2.000</td>
+                            <td>15/01/2024</td>
+                        </tr>
+                        <tr>
+                            <td>André</td>
+                            <td>Financeiro</td>
+                            <td>R$6.300</td>
+                            <td>12/01/2020</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        
+           
+    </main>
+</body>
+</html>

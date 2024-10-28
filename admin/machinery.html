@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/machinery.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+    <link rel="shortcut icon" type="imagex/png" href="/../assets/logo-principal.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script type="module" src="/js/machinery.js" defer></script>
+    <title>Maquinário | Agritech</title>
+</head>
+<body>
+    <header>
+        <div id="up-bar">
+            <p><span>MAQUI</span>NÁRIO</p>
+            <div id="optins-up-bar">
+                <i class="ph ph-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <div id="logo-side">
+            <img src="/assets/logo-principal.png" alt="logo-agritech">
+            <p><span>AGRI</span>TECH</p>
+        </div>
+        <div id="options">
+            <a href="/admin/dashbord.html"><i class="ph ph-chart-line-up"> </i> Dashboard</a>
+            <a href="/admin/plantations.html"><i class="ph ph-plant"> </i> Plantações</a>
+            <a href="/admin/animals.html"><i class="ph ph-paw-print"> </i> Animais</a>
+            <a href="/admin/stock.html"><i class="ph ph-package"> </i> Estoque</a>
+            <a href="/admin/machinery.html"><i class="ph ph-tractor"> </i> Maquinário</a>
+            <a href="/admin/finance.html"><i class="ph ph-currency-dollar"> </i> Financeiro</a>
+            <a href="/admin/employeer.html"><i class="ph ph-users-four"> </i> Funcionários</a>
+            <a href="/index.html"><i class="ph ph-sign-out"> </i> Sair</a>
+        </div>
+    </aside>
+
+    <main>
+        <div class="cards">
+            <h1>Estoque Maquinário</h1>
+            <canvas id="myChart-Estoque-Machine" style="min-height: 29vh;"></canvas>
+        </div>
+        <div class="cards">
+            <div id="title-options">
+                <h1>Futuras Compras</h1>
+                <button>&plus;</button>
+            </div>
+            <div id="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Marca Modelo</th>
+                            <th>Qunatidade</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Trator</td>
+                            <td>John Deere - 840R</td>
+                            <td>2</td>
+                            <td>R$750.500</td>
+                            <td>à comprar</td>
+                        </tr>
+                        <tr>
+                            <td>Trator</td>
+                            <td>John Deere - 840R</td>
+                            <td>2</td>
+                            <td>R$750.500</td>
+                            <td>à comprar</td>
+                        </tr>
+                        <tr>
+                            <td>Trator</td>
+                            <td>John Deere - 840R</td>
+                            <td>2</td>
+                            <td>R$750.500</td>
+                            <td>à comprar</td>
+                        </tr>
+                        <tr>
+                            <td>Trator</td>
+                            <td>John Deere - 840R</td>
+                            <td>2</td>
+                            <td>R$750.500</td>
+                            <td>à comprar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="cards" >
+           <div id="title-options">
+                <h1>Revisões agendadas</h1>
+                <button>&plus;</button>
+            </div>
+            <div id="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Marca Modelo</th>
+                            <th>Data</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>18/06/2024</td>
+                            <td>Aguardando</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>18/06/2024</td>
+                            <td>Aguardando</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>18/06/2024</td>
+                            <td>Aguardando</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>18/06/2024</td>
+                            <td>Aguardando</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>18/06/2024</td>
+                            <td>Aguardando</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>18/06/2024</td>
+                            <td>Aguardando</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="cards">    
+            <div id="title-options">
+                <h1>Maquinários</h1>
+                <button>&plus;</button>
+            </div>
+            <div id="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Marca Modelo</th>
+                            <th>Qauntidade</th>
+                            <th>Data de aquisição</th>
+                            <th>Ultima vistoria</th>
+                            <th>Utilizando</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere - 840R</td>
+                            <td>5</td>
+                            <td>16/06/2024</td>
+                            <td>16/06/2024</td>
+                            <td>Sim</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+           
+    </main>
+</body>
+</html>

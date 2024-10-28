@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62,5%;
+    --color-green: #48B760;
+    --color-green2: #4ecc6a;
+    --color-black: #333333;
+    --color-white: #FFFFFF;
+    --color-gray: #9a9a9a;
+    --color-gray2: #f4f4f4;
+}
+
+body, input, textarea, button {
+    background: var(--color-white);
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: .7rem 1.6rem .8rem;
+    
+}
+
+#logo-header {
+    height: 2.0rem;
+    width: auto;
+}
+
+#style-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .3rem;
+}
+
+#style-logo p{
+    color: var(--color-black);
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+#style-logo p spam {
+    color: var(--color-black);
+}
+
+#header-web {
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#header-web a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+#header-web a:hover {
+    cursor: pointer;
+    color: var(--color-green);
+    transition-duration: 500ms;
+}
+
+span {
+    color: var(--color-green);
+}
+
+#button-style {
+    text-decoration: none;
+    background-color: var(--color-green);
+    border: none;
+    border-radius: 2.5rem;
+    padding: .6rem 1.9rem .6rem;
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 .5rem .9rem rgba(121, 188, 35, 0.5);
+}
+
+button {
+    box-shadow: 0 .5rem .9rem rgba(121, 188, 35, 0.5);
+}
+
+#button-style:hover {
+    background-color: var(--color-green2);
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+#screen1, #screen2, #screen3, #screen4, #screen5, #screen6 {
+    margin: 3.2rem 1.6rem 0;
+}
+
+#screen1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.0;
+}
+
+#screen1 h1 {
+    margin-top: 2.0rem;
+    font-size: 7.5rem;
+    font-weight: 800;
+    color: var(--color-black);
+}
+
+#screen1 p {
+    font-size: 1.1rem;
+    margin-bottom: 2.7rem;
+    font-weight: 500;
+}
+
+#button-screen1 {
+    background-color: var(--color-green);
+    border: none;
+    font-size: 1.0rem;
+    font-weight: 700;
+    border-radius: 2.5rem;
+    padding: .9rem 1.9rem .9rem;
+    color: var(--color-white);
+    margin-top: 2.0rem;
+    margin-bottom: 5.5rem;
+}
+
+#button-screen1:hover {
+    background-color: var(--color-green2);
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+#screen1-bot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.0rem;
+}
+
+#screen1-bot img {
+    height: 5.6rem;
+    width: auto;
+}
+
+#screen1-bot p {
+    margin-top: 2.2rem;
+    font-size: 1.0rem;
+    color: var(--color-gray);
+    font-weight: 600;
+}
+
+#screen1-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: .2rem;
+}
+
+.screen1-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen1 .screen1-images p {
+    font-size: 0.8rem;
+    color: var(--color-gray);
+    font-weight: 600;
+    margin-bottom: .5rem;
+    margin-top: 0.5rem;    
+}
+
+
+#imagem1-section {
+    margin-top: .5rem;
+    height: 15.6rem;   
+}
+
+#imagem2-section {
+    margin-top: .5rem;
+    height: 25.6rem;
+}
+
+#imagem3-section {
+    margin-top: 1.5rem;
+    height: 34.6rem;
+}
+
+#screen2 h1 {
+    margin-top: 3.0rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--color-black);
+}
+
+#screen2 p {
+    font-size: 1.0rem;
+    font-weight: 500;
+    margin: 3.0rem 1.3rem 2.0rem;
+    color: var(--color-black);
+
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 4.0rem;
+    margin-bottom: 4.0rem;
+    place-items: center;
+}
+
+.cards{
+    width: 17.5rem;
+    height: 23.0rem;
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.6rem;
+    background: var(--color-white);
+}
+
+.cards h3 {
+    margin-top: 2.0rem;
+}
+
+#cards-container .cards p {
+    margin-top: .6rem;
+    font-size: 0.8rem;
+    color: var(--color-gray);
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards button {
+    padding: .9rem;
+    background-color: var(--color-green);
+    border: none;
+    font-weight: 700;
+    border-radius: 2.0rem;
+    color: var(--color-white);
+}
+
+.cards button:hover{
+    background-color: var(--color-green2);
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+#screen3 h1 {
+    margin-top: 3.0rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--color-black);
+    margin-bottom: 1.0rem;
+}
+
+#list-b{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 5.5rem;
+}
+
+#list-b h1 {
+    color: var(--color-green);
+    font-size: 7.0rem;
+}
+
+.list-itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.0rem;
+    margin-top: -4.5rem;
+}
+
+.list-info h3 {
+    margin-top: 1.8rem;
+    font-size: 2.0rem;
+}
+
+.list-info p {
+    margin-top: 0.3rem;
+    color: var(--color-gray);
+    font-weight: 600;
+}
+
+#screen4 img {
+    width: 100%;
+    position: relative;
+}
+
+#img-text {
+    position: absolute;
+    margin-top: -28.0rem;
+    width: 47%;
+}
+
+#img-text h1 {
+    color: var(--color-black);
+    font-size: 3.4rem;
+    margin-left: .7rem;
+    font-weight: 900;
+}
+
+#screen6 {
+    padding: 1.0rem 2.0rem 1.0rem;
+    
+}
+
+#screen6 h1 {
+    color: var(--color-black);
+    font-size: 3.4rem;
+    margin-left: .7rem;
+    font-weight: 900;
+    margin-bottom: 2.0rem;
+}
+
+#cards-containers-parceiros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.0rem;
+    margin: 2.5rem 0 2.5rem;
+}
+
+#screen5 h1 {
+    color: var(--color-black);
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--color-black);
+    margin-bottom: 4.0rem;
+}
+
+#forms-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 9.0rem;
+}
+
+#submit-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.0rem;
+}
+
+.wrapper-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+    width: 90%;
+}
+
+.wrapper-form input {
+    height: 2.7rem;
+    width: 130%;
+    padding: 1.0rem;
+    border: .5px solid var(--color-green);
+    border-radius: 1.0rem;
+    background: var(--color-white);
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2);
+}
+
+#submit-form textarea {
+    margin-top: 1.5rem;
+    height: 9.0rem;
+    width: 117%;
+    padding: 1.0rem;
+    border-radius: 1.0rem;
+    border: none;
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2);
+    border: .5px solid var(--color-green);
+}
+
+#button-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+#submit-form button {
+    margin-top: 1.5rem;
+    background-color: var(--color-green);
+    height: 2.7rem;
+    width: 9.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 2.5rem;
+    color: var(--color-white);
+}
+
+#submit-form button:hover{
+    background-color: var(--color-green2);
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+#screen5 img {
+    height: 25.5rem;
+    width: 45.0rem;
+    border-radius: 2.0rem;
+    position: absolute;
+    right: 6.5rem;
+}
+
+footer {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 2.0rem 6.0rem 2.0rem;
+}
+
+#footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#footer-container img {
+    margin-bottom: 1.0rem;
+}
+
+#footer-container h3 {
+    margin-bottom: 1.0rem;
+}
+
+#footer-container p {
+    line-height: 2.0rem;
+}
+
+#icons-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#division {
+    border-bottom: 1px solid var(--color-white);
+    margin-top: 3.0rem;
+}
+
+#finals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.0rem;
+}
